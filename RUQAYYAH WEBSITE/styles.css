@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #dbdcda;
+    background-color: #e7e9e6;
     color: black;
     padding: 20px;
     display: grid;
@@ -131,7 +131,7 @@ nav a {
 }
 .welcome-slogan{
     padding-top: 70px;
-    color: rgb(249, 232, 81);
+    color: rgb(255, 205, 7);
     font-size: 60px;
     
 }
@@ -161,7 +161,7 @@ header .logo span{
     margin-right: 25px;
     margin-left: 25px;
     margin-bottom: 100px;
-    background-color: #f8f0f0;
+    background-color: #dedede;
     border: 2px solid #000; 
     text-align: center;
 }
@@ -172,6 +172,7 @@ header .logo span{
 }
 .welcome p, h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -231,7 +232,7 @@ header .logo span{
 
     bottom: 20px;
     right: 20px;
-    background-color: #f9e851;
+    background-color: rgb(255, 205, 7);
     color: #000000;
     border: none;
     padding: 10px 15px;
@@ -255,6 +256,8 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
+    padding-top: 50px; 
+    padding-bottom: 50px;
 }
 .logo{
     padding-left: 30px;
@@ -265,8 +268,9 @@ footer {
 }
 
 .logo h1 {
+    margin-left: 0;
     color: #ffffff;
-    font-size: 30; 
+    font-size: 30px; 
     text-align: justify;
     white-space: nowrap;
     overflow: hidden; 
@@ -294,4 +298,21 @@ footer {
 .address p, .contact p {
     font-size: 15px;
     font-weight: 100;
+}
+
+.social-media {
+    margin-top: 70px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-link img {
+    width: 30px; /* Adjust the size of social media icons */
+    height: auto;
+}
+.social-link:hover{
+    transform: scale(0.9);
 }
