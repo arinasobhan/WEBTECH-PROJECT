@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo-container">
+            <img src="src/logo.png" alt="Logo">
+            <div>
+                <h2>MAHALLAH</h2>
+                <h1>RUQAYYAH</h1>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-box"><a href="index.html">HOME</a></div>
+            <div class="nav-box dropdown">
+                <button class="dropbtn">ABOUT US ▼</button>
+            <div class="dropdown-content">
+                <a href="about-us.html#abt">Mahallah Background</a>
+                <a href="about-us.html#mission">Mission and Vision</a>
+                <a href="about-us.html#org-chart">Organizational Chart</a>
+                <a href="about-us.html#comm">Committee</a>
+                <a href="about-us.html#contact-us">Contact Us</a>
+                  </div>             
+             </div>
+            <div class="nav-box"><a href="events.html">EVENTS</a></div>
+            <div class="nav-box"><a href="mapfaci.html">MAP AND FACILITIES</a></div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="background-image">
+            <img src="src/bismillah1.png" alt="bismillah-removed">
+            <h1 class="welcome-slogan">WELCOME TO <br>MAHALLAH RUQAYYAH </h1>
+            <p class ="slogan">Towards Iman, Through Ikhlas, To Achieve Ihsan</p> 
+            <button id="scrollDownBtn" onclick="scrollToDown()">↓</button>
+        </div>
+    </section>
+
+
+    <h1 class="tour">A Tour Of Mahallah Ruqayyah</h1>
+    <section id="youtube">
+        <iframe width="880" height="500" src="https://www.youtube.com/embed/Lup0jDk0mm4" title="Mahallah Ruqayyah - IIUM Campus - Malaysia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+     </section>
+    <div class="welcome">
+        <h1>Welcome Message From Principal</h1>
+        <img src="src/principal.jpeg" alt="principal">
+        <p>Assalamualaikum w.b.t.</p>
+        <br>
+        <p>I bid to our beloved fellows, staffs and admin officers and all students of Mahallah Ruqayyah. First and foremost, it is indeed a very great honor to be given this wonderful opportunity to greet all of you to become a part of our Mahallah and to the Ruqayyahian family. We want you to feel welcomed and at home. I am sure that every one of you here will soon fall in love with this wonderful Mahallah and you will never regret staying here because of its awesome facilities and you will surely feel very comfortable.</p>
+        <br>
+        <p>As a resident of Mahallah Ruqayyah, we are placing a big responsibility on you to behave and conduct yourselves as true members of a family- that is to live in peace and harmony with others, help each other and be good human beings. All the things here are ours so take care of them as if they are your own. All the things we do here are for ourselves, so participate in them actively and whole heartedly.</p>
+        <br>
+        <p>Sincerely,
+            Dr. Nik Md. Saiful Azizi Bin Nik Abdullah.
+            Pricipal of Mahallah Ruqayyah.</p>
+    </div>
+    <section id="body">
+        <div class="row">
+            <div class="box" onclick="goToPage('about-us.html')">
+                <h2>ABOUT US</h2>
+                <a href="about-us.html">
+                    <img class="box-img" src="src/org-chart.jpg" alt="box-org">
+                </a>
+            </div>
+            <div class="box" onclick="goToPage('events.html')">
+                <h2>EVENTS</h2>
+                <a href="events.html">
+                    <img class="box-img" src="src/event.jpg" alt="box-event">
+                </a>
+            </div>
+            <div class="box" onclick="goToPage('mapfaci.html')">
+                <h2>MAP & FACILITIES</h2>
+                <a href="mapfaci.html">
+                    <img class="box-img" src="src/ruqayyah-map.jpg" alt="box-map">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about us">
+        <!-- Add about us here -->
+    </section>
+
+    <section id="events">
+        <!-- Add events here -->
+    </section>
+
+    <section id="map and facilities">
+        <!-- Add map and facilities here -->
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="src/logo.png" alt="ruqayyah-logo">
+                <h1>Mahallah Ruqayyah</h1>
+                <h2>Towards Iman, Through Ikhlas, To Achieve Ihsan</h2>
+            </div>
+            <div class="address">
+                <h3>ADDRESS</h3>
+                <p>Lot 1.10, Mahallah Ruqayyah,</p>
+                <p>Universiti Islam Antarabangsa Malaysia</p>
+                <p>Jalan Gombak</p>
+                <p>53100 Kuala Lumpur</p>
+            </div>
+            <div class="contact">
+                <h3>CONTACT US</h3>
+                <p>Phone: +603-64215975 / +603-64215976 (8am-5pm)</p>
+                <p>Email: ruqayyah1920@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollUpBtn" onclick="scrollToTop()">▲</button>
+    <script src="home.js"></script>
+</body>
+</html>

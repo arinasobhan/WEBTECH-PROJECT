@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    background: url(src/islamic\ pattern1.png);
+    overflow-x: hidden; 
+}
+
+header {
+    background-color: #dbdcda;
+    color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size: 20px; 
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size:40px; 
+}
+
+nav {
+    display: flex;
+}
+
+.nav-box {
+    background-color: transparent;
+    padding: 15px;
+    border: 1px solid #000;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; 
+}
+
+.nav-box:hover {
+    background-color: #DFCA93;
+}
+
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: black;
+    text-decoration: none;
+    font-size: 25px; 
+    justify-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.background-image {
+    background-image: url('src/background-home.jpg');
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items at the start (top) */
+    align-items: center;
+}
+.background-image h1{
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2.5;
+}
+.background-image img{
+    width: 10%;
+    height: auto;
+}
+
+.slogan {
+    margin: 5;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.welcome-slogan{
+    padding-top: 70px;
+    color: rgb(249, 232, 81);
+    font-size: 60px;
+    
+}
+header .logo span{
+    
+    font-size: 30px;
+    font-family: fantasy;
+
+
+}
+
+/* Body section styles */
+.tour{
+    text-align: center;
+    margin-top: 120px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#youtube{
+    display: flex;
+    padding: 30px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center; 
+}
+.welcome{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 100px;
+    background-color: #f8f0f0;
+    border: 2px solid #000; 
+    text-align: center;
+}
+.welcome h1{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.welcome p, h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.welcome img{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    padding: 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    background-color: #ffcc99;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #000;
+}
+.box-img {
+    width: 90%;  /* Set initial width */
+    height: auto;
+    transition: transform 0.3s; /* Add transition effect */
+}
+
+.box:hover .box-img {
+    transform: scale(0.9);  /* Scale the image on hover */
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+#scrollUpBtn {
+    display:block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#scrollUpBtn:hover {
+    background-color: #0056b3;
+}
+
+
+#scrollDownBtn {
+
+    bottom: 20px;
+    right: 20px;
+    background-color: #f9e851;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure the button appears above other elements */
+}
+
+#scrollDownBtn:hover {
+    background-color: #ffffff;
+}
+
+/* Footer styles */
+footer {
+    background-color: #13103e;
+    color: #fff;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-left: 30px;
+}
+.logo img {
+    height: 200px;
+    width: auto;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 30; 
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.logo h2 {
+    font-size: 15px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.address, .contact {
+    width: 50%;
+}
+
+.address{
+    margin-left: 50px;
+}
+
+.address h3, .contact h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.address p, .contact p {
+    font-size: 15px;
+    font-weight: 100;
+}
