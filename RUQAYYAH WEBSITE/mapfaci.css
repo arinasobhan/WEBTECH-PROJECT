@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #dbdcda;
+    background-color: #e7e9e6;
     color: black;
     padding: 20px;
     display: grid;
@@ -171,6 +171,9 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+
 }
 .logo{
     padding-left: 30px;
@@ -181,8 +184,9 @@ footer {
 }
 
 .logo h1 {
+    margin-left: 0;
     color: #ffffff;
-    font-size: 30; 
+    font-size: 30px; 
     text-align: justify;
     white-space: nowrap;
     overflow: hidden; 
@@ -226,4 +230,21 @@ footer {
 
 #scrollUpBtn:hover {
     background-color: #0056b3;
+}
+
+.social-media {
+    margin-top: 70px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-link img {
+    width: 30px; /* Adjust the size of social media icons */
+    height: auto;
+}
+.social-link:hover{
+    transform: scale(0.9);
 }
