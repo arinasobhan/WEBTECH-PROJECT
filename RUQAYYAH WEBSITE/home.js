@@ -11,6 +11,7 @@ homeButton.addEventListener('click', () => {
     });
 });
 
+
 aboutButton.addEventListener('click', () => {
     const aboutSection = document.getElementById('about');
     aboutSection.scrollIntoView({ behavior: 'smooth' });
@@ -25,6 +26,11 @@ mapButton.addEventListener('click', () => {
     const mapSection = document.getElementById('map');
     mapSection.scrollIntoView({ behavior: 'smooth' });
 });
+
+function search() {
+    var searchInput = document.getElementById("searchInput").value;
+    alert("You have searched: " + searchInput);
+}
 
 
 // Function to scroll to the top smoothly when the button is clicked
@@ -50,3 +56,4 @@ function scrollToDown() {
 function goToPage(page) {
     window.location.href = page;
 }
+
