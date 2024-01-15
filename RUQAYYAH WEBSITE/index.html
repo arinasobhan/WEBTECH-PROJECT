@@ -6,9 +6,9 @@
     <title>HOMEPAGE</title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    
     <header>
         <div class="logo-container">
             <img src="src/logo.png" alt="Logo">
@@ -41,9 +41,20 @@
             <p class ="slogan">Towards Iman, Through Ikhlas, To Achieve Ihsan</p> 
             <button id="scrollDownBtn" onclick="scrollToDown()">↓</button>
         </div>
-    </section>
-
-
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit" class="search-button" onclick="search()">
+                    <img src="src/search-icon.png" al="search" width=10px height=auto>
+                </button>
+            </div>
+            <div class="search-prompt-container">
+                <p class="search-prompt-message">Search the web using this search bar</p>
+                <button class="search-prompt-close-button" onclick="closeSearchPrompt()">✕</button>
+            </div>
+        </div>
+        <ul id="searchResults"></ul>
+    
     <h1 class="tour">A Tour Of Mahallah Ruqayyah</h1>
     <section id="youtube">
         <iframe width="880" height="500" src="https://www.youtube.com/embed/Lup0jDk0mm4" title="Mahallah Ruqayyah - IIUM Campus - Malaysia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
@@ -53,12 +64,12 @@
         <img src="src/principal.jpeg" alt="principal">
         <p>Assalamualaikum w.b.t.</p>
         <br>
-        <p>I bid to our beloved fellows, staffs and admin officers and all students of Mahallah Ruqayyah. First and foremost, it is indeed a very great honor to be given this wonderful opportunity to greet all of you to become a part of our Mahallah and to the Ruqayyahian family. We want you to feel welcomed and at home. I am sure that every one of you here will soon fall in love with this wonderful Mahallah and you will never regret staying here because of its awesome facilities and you will surely feel very comfortable.</p>
+        <p>I bid to our beloved fellows, staffs and admin officers and all students of Mahallah Ruqayyah. <br>First and foremost, it is indeed a very great honor to be given this wonderful opportunity<br> to greet all of you to become a part of our Mahallah and to the Ruqayyahian family. <br>We want you to feel welcomed and at home. <br>I am sure that every one of you here will soon fall in love with this wonderful Mahallah <br>and you will never regret staying here because of its awesome facilities <br>and you will surely feel very comfortable.</p>
         <br>
-        <p>As a resident of Mahallah Ruqayyah, we are placing a big responsibility on you to behave and conduct yourselves as true members of a family- that is to live in peace and harmony with others, help each other and be good human beings. All the things here are ours so take care of them as if they are your own. All the things we do here are for ourselves, so participate in them actively and whole heartedly.</p>
+        <p>As a resident of Mahallah Ruqayyah, we are placing a big responsibility <br>on you to behave and conduct yourselves <br>as true members of a family that is to live in peace and harmony with others, <br>help each other and be good human beings. <br>All the things here are ours so take care of them as if they are your own. <br>All the things we do here are for ourselves, so participate in <br>them actively and whole heartedly.</p>
         <br>
-        <p>Sincerely,
-            Dr. Nik Md. Saiful Azizi Bin Nik Abdullah.
+        <p>Sincerely,<br><br>
+            Dr. Nik Md. Saiful Azizi Bin Nik Abdullah.<br>
             Pricipal of Mahallah Ruqayyah.</p>
     </div>
     <section id="body">
@@ -95,6 +106,22 @@
     <section id="map and facilities">
         <!-- Add map and facilities here -->
     </section>
+    <section id="leave-comment">
+        <h2>Leave A Comment</h2>
+        <p>Feel Free To Contact Us If You Have Any Further Inquiries!</p>
+        <form id="comment-form">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <button id="subm" type="submit">SUBMIT</button>
+        </form>
+    </section>
     <footer>
         <div class="footer-content">
             <div class="logo">
@@ -124,5 +151,6 @@
     </footer>
     <button id="scrollUpBtn" onclick="scrollToTop()">▲</button>
     <script src="home.js"></script>
+    <script src="comment.js"></script>
 </body>
 </html>
